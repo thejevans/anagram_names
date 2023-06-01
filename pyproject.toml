@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "anagram-names"
+version = "0.1.0"
+description = "generates all anagrams given a last name, a list of first names, and a list of words"
+authors = ["John Evans"]
+license = "GPL v3.0"
+readme = "README.md"
+packages = [{include = "anagram_names"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+nltk = "^3.8.1"
+numba = "^0.57.0"
+numpy = "^1.24.3"
+tqdm = "^4.65.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
